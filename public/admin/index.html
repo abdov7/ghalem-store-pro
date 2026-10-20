@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="robots" content="noindex,nofollow" />
+<title>لوحة الإدارة — Ghalem Store</title>
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<!-- Login view -->
+<div id="loginView" class="center-wrap" hidden>
+  <form class="card login-card" id="loginForm" autocomplete="off">
+    <h1>Ghalem Store</h1>
+    <p class="muted">لوحة الإدارة — سجّل الدخول للمتابعة</p>
+    <div class="field">
+      <label for="loginUser">اسم المستخدم</label>
+      <input id="loginUser" name="username" autocomplete="username" required />
+    </div>
+    <div class="field">
+      <label for="loginPass">كلمة المرور</label>
+      <input id="loginPass" type="password" name="password" autocomplete="current-password" required />
+    </div>
+    <div class="form-err" id="loginErr" role="alert"></div>
+    <button type="submit" class="btn primary" id="loginBtn">دخول</button>
+  </form>
+</div>
+
+<!-- App view -->
+<div id="appView" hidden>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <b class="brand">Ghalem Store <span class="tag">إدارة</span></b>
+      <div class="top-actions">
+        <span class="me" id="meLabel"></span>
+        <button class="btn ghost sm" id="logoutBtn">تسجيل الخروج</button>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="أقسام اللوحة">
+      <button class="tab active" data-tab="orders">الطلبات</button>
+      <button class="tab" data-tab="products">المنتجات</button>
+      <button class="tab" data-tab="discounts">الخصومات</button>
+      <button class="tab" data-tab="settings">الإعدادات</button>
+      <button class="tab" data-tab="audit">سجل التدقيق</button>
+      <button class="tab" data-tab="password">كلمة المرور</button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="tab-orders" class="tabpane active"></section>
+    <section id="tab-products" class="tabpane" hidden></section>
+    <section id="tab-discounts" class="tabpane" hidden></section>
+    <section id="tab-settings" class="tabpane" hidden></section>
+    <section id="tab-audit" class="tabpane" hidden></section>
+    <section id="tab-password" class="tabpane" hidden></section>
+  </main>
+</div>
+
+<!-- Order detail drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="orderDrawer" role="dialog" aria-modal="true" aria-label="تفاصيل الطلب">
+  <div class="d-head">
+    <b id="drawerTitle">تفاصيل الطلب</b>
+    <button class="x-btn" id="drawerClose" aria-label="إغلاق">×</button>
+  </div>
+  <div class="d-body" id="drawerBody"></div>
+</aside>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>
