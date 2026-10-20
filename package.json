@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.1.0",
+    "express-session": "^1.18.1",
+    "multer": "^2.0.2"
+  },
+  "description": "Ghalem Store Pro — متجر شحن الألعاب (backend)",
+  "engines": {
+    "node": ">=22"
+  },
+  "name": "ghalem-store-pro",
+  "scripts": {
+    "create-admin": "node server/scripts/create-admin.js",
+    "migrate": "node server/migrate.js",
+    "seed": "node server/seed.js",
+    "start": "node server/index.js",
+    "test": "node --test 'tests/*.test.js'"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
