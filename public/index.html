@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="description" content="Ghalem Store — متجر غالم لشحن الألعاب في الجزائر: شحن جواهر وشحن عملات الألعاب بالدينار الجزائري، الدفع عبر CCP وBaridiMob." />
+<title>Ghalem Store — متجر غالم لشحن الألعاب بالدينار الجزائري</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- SVG symbols (inline, no external assets) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pad" viewBox="0 0 24 24"><path d="M7.5 6h9A5.5 5.5 0 0 1 22 11.5c0 2.4-1.9 4.3-4.2 4.3-1.1 0-2.1-.4-2.9-1.2L13.7 13h-3.4l-1.2 1.6c-.8.8-1.8 1.2-2.9 1.2C3.9 15.8 2 13.9 2 11.5A5.5 5.5 0 0 1 7.5 6Zm-2 3.2a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1v-1a1 1 0 1 0-2 0v1h-1ZM16 9a1.1 1.1 0 1 0 0 2.2A1.1 1.1 0 0 0 16 9Zm1.8 2.6a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2Z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path d="M10 2a8 8 0 1 0 4.9 14.3l5 5a1.4 1.4 0 0 0 2-2l-5-5A8 8 0 0 0 10 2Zm0 2.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M2.5 3h2l2.6 12.4a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L20.5 7H6.1L5.6 4.6A1.5 1.5 0 0 0 4.1 3H2.5v1.5ZM9 20.5A1.8 1.8 0 1 0 9 24a1.8 1.8 0 0 0 0-3.5Zm8 0A1.8 1.8 0 1 0 17 24a1.8 1.8 0 0 0 0-3.5Z" transform="translate(0 -2)"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4.5 13.5H11L9.8 22 19 10h-6.5L13 2Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm-1.2 14.6-3-3 1.4-1.4 1.6 1.6 4-4 1.4 1.4-5.4 5.4Z"/></symbol>
+  <symbol id="i-flash" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5S12.5 5 12 2c-.5 3-2.5 5-4.5 6.5C5.6 10 5 12 5 15a7 7 0 0 0 7 7Z"/></symbol>
+  <symbol id="i-head" viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-7 7v4a3 3 0 0 0 3 3h1v-7H6.2A5.5 5.5 0 0 1 12 5.5 5.5 5.5 0 0 1 17.8 10H15v7h1a3 3 0 0 0 3-3v-4a7 7 0 0 0-7-7Z"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 6H5V4h13V2H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h15a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1Zm-3.5 10.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6.5 3h11L22 9l-10 12L2 9l4.5-6ZM12 17.7 18.4 9H5.6L12 17.7ZM8.9 5.2 6.9 7.5h3.4L8.9 5.2Zm6.2 0L13.7 7.5h3.4l-2-2.3Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M8 3h11a2 2 0 0 1 2 2v11h-2V5H8V3ZM5 7h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="m12 10.6 5-5 1.4 1.4-5 5 5 5-1.4 1.4-5-5-5 5L5.6 17l5-5-5-5L7 5.6l5 5Z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M9 3h6l1 2h4v2H4V5h4l1-2ZM6 9h12l-1 12a2 2 0 0 1-2 1.8H9A2 2 0 0 1 7 21L6 9Z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3Z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 3h9l9 9-9 9-9-9V3Zm4 3.5A1.8 1.8 0 1 0 7 10a1.8 1.8 0 0 0 0-3.5Z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.7 1.4 5.1 3.7 6.7L5 22l4-1.9c.9.3 1.9.4 3 .4 5.5 0 10-3.9 10-8.7S17.5 3 12 3Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m9.5 16.2-4-4L4 13.7l5.5 5.5 11-11L19 6.7l-9.5 9.5Z"/></symbol>
+  <symbol id="i-vol" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4ZM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6Z"/></symbol>
+  <symbol id="i-volx" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3Zm13.2 3 4.1-4.1-1.3-1.3-4.1 4.1-4.1-4.1-1.3 1.3L13.6 12l-4.1 4.1 1.3 1.3 4.1-4.1 4.1 4.1 1.3-1.3L16.2 12Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M8.6 5.2 10 3.8l8 8.2-8 8.2-1.4-1.4 6.6-6.8z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 2 2 8l10 6 10-6-10-6ZM4.6 9.7 11 13.5v8.3l-6.4-3.8V9.7Zm14.8 0V18l-6.4 3.8v-8.3l6.4-3.8Z"/></symbol>
+</svg>
+
+<!-- Top strip -->
+<div class="topstrip">
+  <div class="wrap">
+    <span class="t-item"><svg class="ic"><use href="#i-flash"/></svg> شحن سريع بعد تأكيد الدفع</span>
+    <span class="t-item hide-s"><svg class="ic"><use href="#i-wallet"/></svg> الدفع: CCP / BaridiMob</span>
+    <span class="t-item hide-s"><svg class="ic"><use href="#i-shield"/></svg> متجر جزائري</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site" id="siteHeader">
+  <div class="wrap">
+    <a class="logo" href="#/home" aria-label="Ghalem Store — الرئيسية">
+      <span class="mark"><svg class="ic"><use href="#i-pad"/></svg></span>
+      <span class="name"><span dir="ltr">Ghalem Store</span><small>متجر غالم لشحن الألعاب</small></span>
+    </a>
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="ابحث عن لعبة…" aria-label="بحث عن لعبة" autocomplete="off" />
+      <button type="submit" aria-label="بحث"><svg class="ic" style="width:17px;height:17px"><use href="#i-search"/></svg><span class="hide-s">بحث</span></button>
+    </form>
+    <div class="head-actions">
+      <button class="icon-btn sound-btn" id="soundBtn" aria-label="تشغيل أو كتم الصوت" aria-pressed="true" title="الصوت">
+        <svg class="ic ic-on"><use href="#i-vol"/></svg>
+        <svg class="ic ic-off"><use href="#i-volx"/></svg>
+      </button>
+      <button class="icon-btn" id="cartBtn" aria-label="سلة التسوق">
+        <svg class="ic"><use href="#i-cart"/></svg>
+        <span class="badge" id="cartCount" style="display:none">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Main tabs (desktop) -->
+<nav class="main-tabs" aria-label="أقسام المتجر">
+  <div class="wrap" id="mainTabs">
+    <button class="tab-btn" data-route="home"><svg class="ic"><use href="#i-home"/></svg> الرئيسية</button>
+    <button class="tab-btn" data-route="games"><svg class="ic"><use href="#i-grid"/></svg> الألعاب</button>
+    <button class="tab-btn" data-route="deals"><svg class="ic"><use href="#i-bolt"/></svg> العروض</button>
+    <button class="tab-btn" data-route="track"><svg class="ic"><use href="#i-box"/></svg> تتبع الطلب</button>
+    <button class="tab-btn" data-route="help"><svg class="ic"><use href="#i-head"/></svg> المساعدة</button>
+  </div>
+</nav>
+
+<main class="wrap" id="main">
+  <div id="view" aria-live="polite"></div>
+</main>
+
+<!-- Footer -->
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <b>Ghalem Store</b>
+        <p id="footerAbout">متجر جزائري لشحن الألعاب بالدينار الجزائري. الدفع عبر CCP أو BaridiMob، والتوصيل على معرّف حسابك مباشرة بعد تأكيد الدفع.</p>
+      </div>
+      <div>
+        <b>أقسام</b>
+        <ul>
+          <li><a href="#/games">الألعاب</a></li>
+          <li><a href="#/deals">العروض</a></li>
+          <li><a href="#/track">تتبع الطلب</a></li>
+          <li><a href="#/help">المساعدة</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>تواصل</b>
+        <ul>
+          <li><a id="footerWa" href="#" rel="noopener">واتساب الدعم</a></li>
+          <li><a href="#/help">الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">© <span id="year"></span> <span dir="ltr">Ghalem Store</span> — جميع الأسعار بالدينار الجزائري. المبالغ المعروضة في السلة تقديرية، والمبلغ النهائي المعتمد هو ما يظهر عند تأكيد الطلب.</div>
+  </div>
+</footer>
+
+<!-- Bottom nav (mobile) -->
+<nav class="bottomnav" aria-label="التنقل السريع">
+  <button data-route="home" aria-label="الرئيسية"><svg class="ic"><use href="#i-home"/></svg>الرئيسية</button>
+  <button data-route="games" aria-label="الألعاب"><svg class="ic"><use href="#i-grid"/></svg>الألعاب</button>
+  <button data-route="deals" aria-label="العروض"><svg class="ic"><use href="#i-bolt"/></svg>العروض</button>
+  <button id="cartBtnM" aria-label="السلة"><svg class="ic"><use href="#i-cart"/></svg>السلة<span class="badge" id="cartCountM" style="display:none">0</span></button>
+  <button data-route="help" aria-label="المساعدة"><svg class="ic"><use href="#i-head"/></svg>المساعدة</button>
+</nav>
+
+<!-- Cart drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer" aria-label="سلة التسوق" role="dialog" aria-modal="true">
+  <div class="d-head">
+    <b>سلة التسوق</b>
+    <button class="x-btn" id="cartClose" aria-label="إغلاق السلة"><svg class="ic"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="d-body" id="cartBody"></div>
+  <div class="d-foot" id="cartFoot"></div>
+</aside>
+
+<!-- Layla mascot -->
+<div class="mascot" id="mascot" aria-hidden="false">
+  <div class="mascot-bubble" id="mascotBubble" role="status">
+    <button class="mascot-bubble-x" id="bubbleX" aria-label="إغلاق">×</button>
+    <p id="bubbleText"></p>
+  </div>
+  <button class="mascot-char" id="mascotChar" aria-label="ليلى — مساعدة المتجر">
+    <span class="mascot-breathe">
+      <img id="mascotFace" src="assets/layla/layla-face.webp" alt="ليلى" class="mascot-face" draggable="false" />
+      <img id="mascotBlink" src="assets/layla/layla-blink.webp" alt="" class="mascot-face mf-blink" draggable="false" />
+    </span>
+    <span class="mascot-dot" id="mascotDot" style="display:none">!</span>
+  </button>
+  <span class="mascot-name">ليلى</span>
+</div>
+
+<!-- Layla help panel -->
+<div class="mascot-panel" id="mascotPanel" role="dialog" aria-label="مساعدة ليلى" aria-hidden="true">
+  <div class="mp-head">
+    <span class="mp-ava">
+      <img src="assets/layla/layla-face.webp" alt="ليلى" draggable="false" />
+      <img src="assets/layla/layla-blink.webp" alt="" class="mp-blink" draggable="false" />
+    </span>
+    <div class="mp-id"><b>ليلى</b><span>مساعدة المتجر</span></div>
+    <button class="x-btn" id="panelClose" aria-label="إغلاق"><svg class="ic"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="mp-body" id="mpBody"></div>
+  <div class="mp-chips" id="mpChips"></div>
+  <div class="mp-foot">
+    <a class="mp-wa" id="panelWa" href="#" rel="noopener" target="_blank"><svg class="ic" style="width:18px;height:18px"><use href="#i-chat"/></svg> تواصل واتساب</a>
+  </div>
+</div>
+
+<!-- Layla walker -->
+<button class="walker" id="walker" aria-label="ليلى تتمشى">
+  <span class="walker-tilt">
+    <span class="walker-bubble" id="walkerBubble"><span id="walkerText"></span></span>
+    <span class="walker-body"><img src="assets/layla/layla-walk.webp" alt="ليلى" draggable="false" /></span>
+    <span class="walker-dust" id="walkerDust"></span>
+    <span class="walker-shadow"></span>
+  </span>
+</button>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
